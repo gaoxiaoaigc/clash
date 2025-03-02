@@ -1,0 +1,8 @@
+# 该列表为不需要使用代理的海外网站
+
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,todesk.com
+DOMAIN-SUFFIX,tailscale.com
+
+

@@ -14,13 +14,14 @@ ruleset=⚡ SpeedTest,https://raw.githubusercontent.com/gaoxiaoaigc/clash/refs/h
 ruleset=🏠 国内,[]FINAL
 
 ;2、策略组（域名组-节点组）
-custom_proxy_group=🏡 Direct`select`[]DIRECT`[]local-istore
-custom_proxy_group=🌍 Proxy`select`[]local-istore`[]DIRECT
-custom_proxy_group=⚡ SpeedTest`select`[]local-istore`[]DIRECT
-custom_proxy_group=🏠 国内`select`[]DIRECT`[]local-istore
+custom_proxy_group=🏡 Direct`select`[]DIRECT`[]local-istore`[]lyd-cf
+custom_proxy_group=🌍 Proxy`select`[]local-istore`[]DIRECT`[]lyd-cf
+custom_proxy_group=⚡ SpeedTest`select`[]local-istore`[]DIRECT`[]lyd-cf
+custom_proxy_group=🏠 国内`select`[]DIRECT`[]local-istore`[]lyd-cf
 
 ;3、节点组
-custom_proxy_group=local-istore`url-test`.*`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=local-istore`url-test`("name":"home-http"|"name":"work-http")`http://www.gstatic.com/generate_204`60,150
+custom_proxy_group=lyd-cf`url-test`(CF随机节点)`http://www.gstatic.com/generate_204`60,150
 
 
 ;4、启用规则集

@@ -1,0 +1,28 @@
+;1、域名组
+ruleset=🌍 Proxy,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/OpenAi.list
+ruleset=🌍 Proxy,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Claude.list
+ruleset=🌍 Proxy,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Gemini.list
+ruleset=🏡 Direct,https://raw.githubusercontent.com/gaoxiaoaigc/clash/refs/heads/main/G-Direct.list
+ruleset=🌍 Proxy,https://raw.githubusercontent.com/gaoxiaoaigc/clash/refs/heads/main/G-Proxy-Quick.list
+ruleset=🌍 Proxy,https://raw.githubusercontent.com/gaoxiaoaigc/clash/refs/heads/main/G-Proxy-Safe.list
+ruleset=🌍 Proxy,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Github.list
+ruleset=🌍 Proxy,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/TikTok.list
+ruleset=🌍 Proxy,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/YouTube.list
+ruleset=🌍 Proxy,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Twitter.list
+ruleset=🌍 Proxy,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyGFWlist.list
+ruleset=⚡ SpeedTest,https://raw.githubusercontent.com/gaoxiaoaigc/clash/refs/heads/main/G-Proxy-SpeedTest.list
+ruleset=🏠 国内,[]FINAL
+
+;2、策略组（域名组-节点组）
+custom_proxy_group=🏡 Direct`select`[]DIRECT`[]local-istore
+custom_proxy_group=🌍 Proxy`select`[]local-istore`[]DIRECT
+custom_proxy_group=⚡ SpeedTest`select`[]local-istore`[]DIRECT
+custom_proxy_group=🏠 国内`select`[]DIRECT`[]local-istore
+
+;3、节点组
+custom_proxy_group=local-istore`url-test`.*`http://www.gstatic.com/generate_204`60,150
+
+
+;4、启用规则集
+enable_rule_generator=true
+overwrite_original_rules=true

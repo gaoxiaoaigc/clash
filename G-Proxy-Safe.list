@@ -1,6 +1,8 @@
 # 该列表为需要使用安全代理的网站
 
-# DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-KEYWORD,claude
+DOMAIN-KEYWORD,anthropic
 # DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,usercontent.goog
 DOMAIN-SUFFIX,sora.com

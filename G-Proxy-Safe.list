@@ -1,5 +1,6 @@
 # 该列表为需要使用安全代理的网站
-
+DOMAIN-KEYWORD,cloudflare
+DOMAIN-SUFFIX,featureassets.org
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claude.app
 DOMAIN-SUFFIX,claudeusercontent.com

@@ -13,3 +13,7 @@ DOMAIN-SUFFIX,usercontent.goog
 DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,gateway.ai.cloudflare.com
 DOMAIN-SUFFIX,zed.dev
+DOMAIN,api3.siftscience.com
+DOMAIN,browser-intake-us5-datadoghq.com
+DOMAIN,api.segment.io
+DOMAIN,api.revenuecat.com

@@ -3,4 +3,10 @@
 DOMAIN-SUFFIX,todesk.com
 DOMAIN-SUFFIX,tailscale.com
 
+# 中国银行（香港）
+DOMAIN-SUFFIX,bochk.com
 
+# 汇丰银行（香港）
+DOMAIN-SUFFIX,hsbc.com.hk
+DOMAIN-SUFFIX,vv1865.com
+DOMAIN,lptag.liveperson.net

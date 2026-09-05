@@ -9,6 +9,7 @@ DOMAIN-SUFFIX,claudemcpcontent.com
 DOMAIN-KEYWORD,claude
 DOMAIN-KEYWORD,anthropic
 # DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.site
 DOMAIN-SUFFIX,usercontent.goog
 DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,gateway.ai.cloudflare.com
